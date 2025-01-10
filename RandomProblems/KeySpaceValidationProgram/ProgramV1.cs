@@ -1,8 +1,8 @@
 ﻿using MathNet.Numerics.LinearAlgebra;
 
-class Program
+class ProgramV1
 {
-    static void Main(string[] args)
+    static void Mainv1(string[] args)
     {
         Console.WriteLine("Checking the keys for unlocking the library...");
 

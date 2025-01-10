@@ -40,3 +40,7 @@ result = can_unlock_library(keys)  # Returns False
 Explanation:
 
 The set of provided keys cannot represent the key [0, 0, 1]. Hence all possible keys required to unlock the library.
+
+
+
+Solution : https://gist.github.com/aarshdeepsinghchadha/61c9235c56a2c1cae316f331f8b4b1a3
