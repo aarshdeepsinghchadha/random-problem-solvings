@@ -10,6 +10,7 @@ public class Program
         if (!File.Exists(datasetPath))
         {
             Console.WriteLine("data.csv is missing!");
+            throw new FileNotFoundException("data.csv is required but missing.");
         }
         else
         {
@@ -19,6 +20,7 @@ public class Program
         if (!File.Exists(creatorsPath))
         {
             Console.WriteLine("creators.csv is missing!");
+            throw new FileNotFoundException("creators.csv is required but missing.");
         }
         else
         {
@@ -41,6 +43,8 @@ public class Program
                                                        .First().index;
 
         var focusSwitches = IdentifyFocusSwitches(creators, evolvedCreators);
+
+
         Console.WriteLine($"Creator with highest tech value after 4 weeks: {(highestTechIndex != -1 ? highestTechIndex.ToString() : "None")}");
         Console.WriteLine($"Creator with highest entertainment value after 4 weeks: {(highestEntertainmentIndex != -1 ? highestEntertainmentIndex.ToString() : "None")}");
 
@@ -53,8 +57,6 @@ public class Program
                           (focusSwitches.entertainmentToTech.Count > 0
                               ? string.Join(", ", focusSwitches.entertainmentToTech)
                               : "None"));
-
-
     }
 
     static List<double[]> ReadCsv(string filePath)

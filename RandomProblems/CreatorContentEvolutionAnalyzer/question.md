@@ -16,5 +16,4 @@ creators.csv (https://github.com/arpitbbhayani/swe-math-weekly/blob/master/2/cre
 
 
 
-Solution for now :
-https://gist.github.com/aarshdeepsinghchadha/e7abf3213cc253956d9be35733bdafb2
+Solution for now :https://gist.github.com/aarshdeepsinghchadha/717490020fcc402493f48308e10b4257
